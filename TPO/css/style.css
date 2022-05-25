@@ -1,0 +1,118 @@
+body {
+    box-sizing: border-box;
+    background-color: beige;
+}
+main {
+    font-family: 'Roboto Mono', monospace;
+}
+h1 {
+    text-align: center;
+    font-size: 48px;
+    text-shadow: 3px 3px 5px rgb(103, 141, 81);
+}
+h2 {
+    text-align: center;
+    font-size: 36px;
+    text-shadow: 3px 3px 5px rgb(103, 141, 81);
+}
+h3 {
+    text-align: left;
+    font-size: 32px;
+    text-shadow: 3px 3px 5px rgb(103, 141, 81);
+}
+.contenedor {
+    display: flex;
+    flex-wrap: wrap;
+
+}
+.contenido {
+    flex: 25%;
+}
+.contenido img{
+    width: 100%;
+    border-radius: 10px;
+
+}
+.info{
+    text-align: center;
+    background-color: rgb(103, 141, 81);
+    margin: 10px;
+    padding: 10px 10px;
+    border: 2px solid black;
+    border-radius: 10px;
+}
+.contenido img:hover {
+    animation: zoom 1s forwards;
+}
+
+@keyframes zoom {
+    0% {
+        transform: scale(1);
+        box-shadow: 0 2px 5px #ccc;
+        border-radius: 10px;
+    }
+    100% {
+        transform: scale(1.05);
+        box-shadow: 0 2px 5px #ccc;
+        border-radius: 10px;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    .contenido {
+        flex: 50%;
+    }
+}
+@media screen and (max-width: 760px) {
+    .contenido {
+        flex: 100%;
+    }
+}
+footer {
+    background-color: #111111;
+    padding: 5px;
+    border-radius: 10px;
+}
+footer p {
+    color: white;
+}
+#iframe {
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+#register-form {
+    width:380px;
+    background-color:rgb(103, 141, 81);
+    padding:24px;
+    margin-left:auto;
+    margin-right:auto;
+    border-radius: 10px;
+    box-shadow: 5px 5px 5px #ccc;
+}
+.inp-lab {
+    margin:0;
+    margin-bottom:4px;
+    margin-top:12px;				
+}
+.inp {
+    width:100%;
+}
+.but {
+    text-align: center;
+}
+#submit-button {
+    background-color:#0056ff;
+    padding-top:12px;
+    padding-bottom:12px;
+    padding-left:24px;
+    padding-right:24px;
+    font-size:18px;
+    color:white;
+    border:none;
+    border-radius: 5px;
+}
+#submit-button:hover {
+    background-color: black;
+    cursor: pointer;
+}

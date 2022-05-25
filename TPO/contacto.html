@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yerba Rei Verde</title>
+    <link rel="shortcut icon" href="./img/favicon.ico" type="image/x-icon">
+    <script src="https://kit.fontawesome.com/3682b977b2.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./css/navContacto.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap" rel="stylesheet"> 
+
+</head>
+<body>
+    <header>
+        <nav class="nav-bar">
+            <a href="index.html">
+                <i class="fas fa-th"></i>
+                <b>Inicio</b>
+            </a>
+            <a href="info.html">
+                <i class="fa-solid fa-circle-info"></i>
+                <b>Info</b>
+            </a>
+            <a href="contacto.html">
+                <i class="fas fa-id-badge"></i>
+                <b>Contacto</b>
+            </a>
+            <span></span>
+        </nav>
+    </header>
+    <main>
+        <br><br><br>
+        <h2>Contáctanos!</h2>
+        <form id="register-form" action="contacto.html" method="get">
+            <div class="inp-lab">
+                <label for="nombre">Nombre:</label><br>
+                <input class="inp" type="text" id="nombre" name="nombre">
+            </div>
+            <div class="inp-lab">
+                <label for="apellido">Apellido:</label><br>
+                <input class="inp" type="text" id="apellido" name="apellido">
+            </div>
+            <div class="inp-lab">
+                <label for="email">Email:</label><br>
+                <input class="inp" type="email" id="email" name="email">
+            <div class="inp-lab">
+                <label for="number">Celular:</label><br>
+                <input class="inp" type="number" id="number" name="number">
+            </div>
+            <div class="inp-lab">
+                Que Stock desea consultar?<br>
+                <input type="radio" id="classic" name="stock" value="classic">
+                <label for="classic">Classic</label><br>
+                <input type="radio" id="padronArg" name="stock" value="padronArg">
+                <label for="padronArg">Padron Argentino</label><br>
+                <input type="radio" id="premium" name="stock" value="premium">
+                <label for="premium">Premium</label><br>
+                <input type="radio" id="tradicional" name="stock" value="tradicional">
+                <label for="tradicional">Tradicional</label><br><br>
+            <div class="inp-lab but">
+                <input id="submit-button" type="submit" value="Enviar">
+            </div>
+        </form>
+    </main>
+    <footer style="margin-top: 200px;">
+        <p>by Tiago Vazquez, Mendoza, Argentina. 2022.</p>
+    </footer>
+    
+    <script src="./js/validar.js"></script>
+</body>
+</html>
